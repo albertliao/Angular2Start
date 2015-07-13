@@ -2,17 +2,28 @@
 <html>
   <head>
     <title>Angular 2 Quickstart</title>
+    <!-- Traceur let's you run ES6, Angular 2 depends on this -->
     <script src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js"></script>
+    <!-- Gives you ES6 module loading -->
     <script src="https://jspm.io/system@0.16.js"></script>
+    <!-- Angular 2 -->
     <script src="https://code.angularjs.org/2.0.0-alpha.28/angular2.dev.js"></script>
   </head>
   <body>
   
-    <!-- The app component created in app.ts -->
-    <my-app></my-app>
+    <!-- Angular2 components -->
+    <basic-demo></basic-demo>
+    <array-demo></array-demo>
+    <service-demo></service-demo>
     <todo-list></todo-list>
-    <script>System.import('app');</script>
-    <script>System.import('todo');</script>
     
+    <!-- Import components -->
+    <script>System.import('basicDemo');</script>
+    <!--
+    <script>System.import('arrayDemo');</script>
+    <script>System.import('serviceDemo');</script>
+    <script>System.import('todo');</script>
+    -->
+
   </body>
 </html>

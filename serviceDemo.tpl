@@ -1,3 +1,4 @@
+<h1>Service Demo</h1>
 <p>My name: <strong>{{ name }}</strong></p>
 <p>Friends:</p>
 <ul>

@@ -1,31 +1,25 @@
 /// <reference path="/typings/angular2/angular2.d.ts" />
 import {Component, View, bootstrap, NgFor, NgIf} from 'angular2/angular2';
-
-class FriendsService {
-  names: Array<string>;
-  constructor() {
-    this.names = ["Alice", "Aarav", "Martín", "Shannon", "Ariana", "Kai"];
-  }
-}
+import {FriendsService} from 'friendService';
 
 // Annotation section
 @Component({
-  selector: 'my-app'
+  selector: 'service-demo',
   appInjector: [FriendsService]
 })
 @View({
-  templateUrl: '/app.tpl'
+  templateUrl: '/serviceDemo.tpl',
   directives: [NgFor, NgIf]
 })
 // Component controller
-class MyAppComponent {
+class ServiceDemoComponent {
   name: string;
   names: Array<string>;
   
   constructor(friendsService: FriendsService) {
-    this.name = 'Kathleen';
+    this.name = 'Albert';
     this.names = friendsService.names;
   }
 }
 
-bootstrap(MyAppComponent);
+bootstrap(ServiceDemoComponent);

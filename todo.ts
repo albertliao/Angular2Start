@@ -5,6 +5,7 @@ import {Component, View, bootstrap, NgFor, NgIf, formDirectives} from 'angular2/
 })
 @View({
   template: `
+  	<h1>Todo List</h1>
     <ul>
       <li *ng-for="#todo of todos; #i = index">
         {{ todo }} <button (click)="removeTodo(i)">X</button>
@@ -25,7 +26,7 @@ class TodoList {
   todotext: string;
   
   constructor() {
-    this.todos = ["Eat Breakfast", "Walk Dog", "Breathe"];
+    this.todos = ["Lick Donuts", "Hate Americans", "Make Apology Video"];
     this.todotext = '';
   }
   
