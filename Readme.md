@@ -23,8 +23,8 @@ $ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata %YOURFILE%.ts
 ###  Serve the HTML files locally, http-server is one possibility
 ```
 # From the directory that contains index.html:
-npm install -g http-server  # Or sudo npm install -g http-server
-http-server                 # Creates a server at localhost:8080
+$ npm install -g http-server  # Or sudo npm install -g http-server
+$ http-server                 # Creates a server at localhost:8080
 # In a browser, visit localhost:8080/index.html
 ```
 
